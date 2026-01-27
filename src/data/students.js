@@ -7,12 +7,12 @@ const secureData = [
   {id:5,n:"QUJFTkVaRVIgVC9NSUtBRUw=",m:91.3,c:"MzI0Nw=="},
   {id:6,n:"QUJFVEVSRVQgQUJFQkU=",m:85.7,c:"NzY1NA=="},
   {id:7,n:"QUJSSUhFVCBFRFJJUw==",m:92.3,c:"Mjg5MA=="},
-  {id:8,n:"QUJST05FSCBBSFRFUk9N",m:88.7,c:"NTEyMw=="},
-  {id:9,n:"QUJSSUhFVCBCRVJISUFOVQ==",m:94.7,c:"ODQ1Ng=="},
+  {id:8,n:"QUJSTkVDSCBBSFRFUk9N",m:88.7,c:"NTEyMw=="},
+  {id:9,n:"QUJSSUhFVCBCRVJJQU5V",m:94.7,c:"ODQ1Ng=="},
   {id:10,n:"QUJSSUhFVCBNSVJBVw==",m:89.3,c:"MzY3OA=="},
   {id:11,n:"QUJSSUhFVCBUSE9NQVM=",m:90.7,c:"NzI5MA=="},
   {id:12,n:"QUJSSUhFVCBZQU5ORVM=",m:87.3,c:"NDU2Nw=="},
-  {id:13,n:"QUJSSUhFVCBaRUJFRU5B",m:93.7,c:"NjM0Mg=="},
+  {id:13,n:"QUJSSUhFVCBWRUJFRU5B",m:93.7,c:"NjM0Mg=="},
   {id:14,n:"QUJSSU1BRUwgQUJCTw==",m:86.3,c:"ODE5Mg=="},
   {id:15,n:"QUJSSU1BRUwgSEFJMRQ==",m:91.7,c:"NTQzMg=="},
   {id:16,n:"QUJSSU1BRUwgSEFNTUQ=",m:88.3,c:"MjcwNQ=="},
@@ -35,7 +35,7 @@ const secureData = [
   {id:33,n:"VElOU0FFIEFCUkhBTQ==",m:90.3,c:"OTAzMQ=="},
   {id:34,n:"V09SS0lORVNIIEJJUkhBTg==",m:91.3,c:"NTE3OA=="},
   {id:35,n:"WUFCU0lSQSBURVdPRE9T",m:99,c:"MjY0Mw=="},
-  {id:36,n:"WUlTQUsgIEdJUk1B",m:97.7,c:"ODM5Ng=="},
+  {id:36,n:"WUlTQUsgI0dJUk1B",m:97.7,c:"ODM5Ng=="},
   {id:37,n:"WU9IQU5ORVMgREFHSU5FSA==",m:92.7,c:"NDcyNQ=="},
   {id:38,n:"WVVOQVNFIEFSQUlZTw==",m:89.3,c:"NjE4Mg=="},
   {id:39,n:"WVVOQVNFIEJFUkhBTQ==",m:94.7,c:"NTI5NA=="},
@@ -51,10 +51,24 @@ const decodeBase64 = (str) => {
   }
 };
 
-// Export decoded data
-export const studentsData = secureData.map(student => ({
-  id: student.id,
-  name: decodeBase64(student.n),
-  mark: student.m,
-  code: decodeBase64(student.c)
-}));
+// Disable console in production
+if (process.env.NODE_ENV === 'production') {
+  console.log = () => {};
+  console.info = () => {};
+  console.debug = () => {};
+  console.warn = () => {};
+  console.error = () => {};
+}
+
+// Export decoded data with security
+export const studentsData = (() => {
+  const decoded = secureData.map(student => ({
+    id: student.id,
+    name: decodeBase64(student.n),
+    mark: student.m,
+    code: decodeBase64(student.c)
+  }));
+  
+  // Freeze the object to prevent modifications
+  return Object.freeze(decoded);
+})();
