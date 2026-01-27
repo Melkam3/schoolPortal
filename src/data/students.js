@@ -51,12 +51,15 @@ const decodeBase64 = (str) => {
   }
 };
 
-// Disable console completely
-console.log = () => {};
-console.info = () => {};
-console.debug = () => {};
-console.warn = () => {};
-console.error = () => {};
+// DEBUG flag - set to true for development, false for production
+const DEBUG = false;
+
+// Professional logging with DEBUG flag
+const log = (...args) => {
+  if (DEBUG) {
+    console.log(...args);
+  }
+};
 
 // Export decoded data with security
 export const studentsData = (() => {
@@ -66,6 +69,10 @@ export const studentsData = (() => {
     mark: student.m,
     code: decodeBase64(student.c)
   }));
+  
+  // Professional debug logging
+  log("Students data:", decoded);
+  log("Number of students:", decoded.length);
   
   // Freeze the object to prevent modifications
   return Object.freeze(decoded);

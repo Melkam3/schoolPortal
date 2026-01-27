@@ -3,7 +3,19 @@ import { motion } from 'framer-motion';
 import StudentCard from './components/StudentCard';
 import { studentsData } from './data/students.js';
 
+// DEBUG flag - set to true for development, false for production
+const DEBUG = false;
+
+// Professional logging with DEBUG flag
+const log = (...args) => {
+  if (DEBUG) {
+    console.log(...args);
+  }
+};
+
 function App() {
+  log("Students data:", studentsData);
+  log("Number of students:", studentsData.length);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -248,11 +260,14 @@ function App() {
           animate="visible"
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
         >
-          {studentsData.map((student, index) => (
-            <motion.div key={student.id} variants={itemVariants}>
-              <StudentCard student={student} index={index} />
-            </motion.div>
-          ))}
+          {studentsData.map((student, index) => {
+            log(`Rendering student ${index + 1}:`, student.name);
+            return (
+              <motion.div key={student.id} variants={itemVariants}>
+                <StudentCard student={student} index={index} />
+              </motion.div>
+            );
+          })}
         </motion.div>
       </main>
 
