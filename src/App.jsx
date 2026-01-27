@@ -4,7 +4,7 @@ import StudentCard from './components/StudentCard';
 import { studentsData } from './data/students.js';
 
 // DEBUG flag - set to true for development, false for production
-const DEBUG = false;
+const DEBUG = false; // Updated for clean console
 
 // Professional logging with DEBUG flag
 const log = (...args) => {
