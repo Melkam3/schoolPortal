@@ -4,9 +4,6 @@ import StudentCard from './components/StudentCard';
 import studentsData from './data/students.json';
 
 function App() {
-  console.log('Students data:', studentsData);
-  console.log('Number of students:', studentsData.length);
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -251,14 +248,11 @@ function App() {
           animate="visible"
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
         >
-          {studentsData.map((student, index) => {
-            console.log(`Rendering student ${index + 1}:`, student.name);
-            return (
-              <motion.div key={student.id} variants={itemVariants}>
-                <StudentCard student={student} index={index} />
-              </motion.div>
-            );
-          })}
+          {studentsData.map((student, index) => (
+            <motion.div key={student.id} variants={itemVariants}>
+              <StudentCard student={student} index={index} />
+            </motion.div>
+          ))}
         </motion.div>
       </main>
 
