@@ -51,14 +51,12 @@ const decodeBase64 = (str) => {
   }
 };
 
-// Disable console in production
-if (process.env.NODE_ENV === 'production') {
-  console.log = () => {};
-  console.info = () => {};
-  console.debug = () => {};
-  console.warn = () => {};
-  console.error = () => {};
-}
+// Disable console completely
+console.log = () => {};
+console.info = () => {};
+console.debug = () => {};
+console.warn = () => {};
+console.error = () => {};
 
 // Export decoded data with security
 export const studentsData = (() => {
