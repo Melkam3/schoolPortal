@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import StudentCard from './components/StudentCard';
-import studentsData from './data/students.json';
+import { studentsData } from './data/students.js';
 
 function App() {
   const containerVariants = {
