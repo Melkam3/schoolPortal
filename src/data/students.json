@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "ABDULHAFIZ SHEMSEDIN",
+    "mark": 74,
+    "code": "4932"
+  },
+  {
+    "id": 2,
+    "name": "ABDULKERIM",
+    "mark": 95.3,
+    "code": "8156"
+  },
+  {
+    "id": 3,
+    "name": "ABEL TSEGAYE",
+    "mark": 91.3,
+    "code": "2374"
+  },
+  {
+    "id": 4,
+    "name": "ABEM SISAY",
+    "mark": 98.7,
+    "code": "6901"
+  },
+  {
+    "id": 5,
+    "name": "ABENEZER T/MIKAEL",
+    "mark": 91.3,
+    "code": "3247"
+  },
+  {
+    "id": 6,
+    "name": "AMIR YASSIN",
+    "mark": 80.3,
+    "code": "7589"
+  },
+  {
+    "id": 7,
+    "name": "AYNABEBA AYET",
+    "mark": 87,
+    "code": "1826"
+  },
+  {
+    "id": 8,
+    "name": "BESUKAL GOBENA",
+    "mark": 100,
+    "code": "5438"
+  },
+  {
+    "id": 9,
+    "name": "BETELEHEM YEHEYIS",
+    "mark": 69.3,
+    "code": "9072"
+  },
+  {
+    "id": 10,
+    "name": "BETELHEM KEFYALEW",
+    "mark": 92.3,
+    "code": "4619"
+  },
+  {
+    "id": 11,
+    "name": "BIRUK ASEFA",
+    "mark": 82,
+    "code": "7354"
+  },
+  {
+    "id": 12,
+    "name": "DANIEL WONDIMU",
+    "mark": 95,
+    "code": "2085"
+  },
+  {
+    "id": 13,
+    "name": "DAWIT SHIMELIS",
+    "mark": 99,
+    "code": "6423"
+  },
+  {
+    "id": 14,
+    "name": "DURETI  BIRBIRSA",
+    "mark": 73.7,
+    "code": "3971"
+  },
+  {
+    "id": 15,
+    "name": "EBRAHIM MOHAMMED",
+    "mark": 94.7,
+    "code": "8164"
+  },
+  {
+    "id": 16,
+    "name": "EDOM DAGNACHEW",
+    "mark": 81,
+    "code": "5097"
+  },
+  {
+    "id": 17,
+    "name": "EKRAM HUSEN",
+    "mark": 91.7,
+    "code": "2746"
+  },
+  {
+    "id": 18,
+    "name": "ELIDANA MUEZ",
+    "mark": 78.3,
+    "code": "6318"
+  },
+  {
+    "id": 19,
+    "name": "ESKEDAR G/GIYORGIS",
+    "mark": 95.7,
+    "code": "4529"
+  },
+  {
+    "id": 20,
+    "name": "FIKER ASRES",
+    "mark": 73.3,
+    "code": "7835"
+  },
+  {
+    "id": 21,
+    "name": "GIRUM DESALEGN",
+    "mark": 99,
+    "code": "1247"
+  },
+  {
+    "id": 22,
+    "name": "MAHILET G/EGZIABIHER",
+    "mark": 73,
+    "code": "9653"
+  },
+  {
+    "id": 23,
+    "name": "MAREM YENUS",
+    "mark": 74,
+    "code": "3872"
+  },
+  {
+    "id": 24,
+    "name": "MEKDES GETU",
+    "mark": 73.3,
+    "code": "7194"
+  },
+  {
+    "id": 25,
+    "name": "MERON GETACHEW",
+    "mark": 97.7,
+    "code": "2568"
+  },
+  {
+    "id": 26,
+    "name": "MILKI MENGISTU",
+    "mark": 88.7,
+    "code": "8421"
+  },
+  {
+    "id": 27,
+    "name": "MINTESINOT G/TSADIK",
+    "mark": 82.7,
+    "code": "5736"
+  },
+  {
+    "id": 28,
+    "name": "NATNAEL ABEBE",
+    "mark": 74,
+    "code": "4059"
+  },
+  {
+    "id": 29,
+    "name": "NATNAEL TSEHAY",
+    "mark": 98.7,
+    "code": "6814"
+  },
+  {
+    "id": 30,
+    "name": "RUTH TESFAYE",
+    "mark": 97.3,
+    "code": "3297"
+  },
+  {
+    "id": 31,
+    "name": "SAMUEL MESFIN",
+    "mark": 98,
+    "code": "1562"
+  },
+  {
+    "id": 32,
+    "name": "SIFEN SISAY",
+    "mark": 93.3,
+    "code": "7485"
+  },
+  {
+    "id": 33,
+    "name": "TINSAE ABRHAM",
+    "mark": 90.3,
+    "code": "9031"
+  },
+  {
+    "id": 34,
+    "name": "WORKINESH BIRHAN",
+    "mark": 91.3,
+    "code": "5178"
+  },
+  {
+    "id": 35,
+    "name": "YABSIRA TEWODROS",
+    "mark": 99,
+    "code": "2643"
+  },
+  {
+    "id": 36,
+    "name": "YISHAK  GIRMA",
+    "mark": 97.7,
+    "code": "8396"
+  },
+  {
+    "id": 37,
+    "name": "YOHANNES DAGINEH",
+    "mark": 92.7,
+    "code": "4725"
+  },
+  {
+    "id": 38,
+    "name": "YONATHAN DEMEKE",
+    "mark": 90,
+    "code": "6159"
+  },
+  {
+    "id": 39,
+    "name": "ZAKIR JEMAL",
+    "mark": 95,
+    "code": "3847"
+  },
+  {
+    "id": 40,
+    "name": "ZELALEM MEBRATU",
+    "mark": 98.3,
+    "code": "7028"
+  }
+]
